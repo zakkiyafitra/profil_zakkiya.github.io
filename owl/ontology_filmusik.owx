@@ -1,0 +1,885 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://example.org/film-musik"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://example.org/film-musik">
+    <Prefix name="" IRI="http://www.semanticweb.org/hp/ontologies/2026/4/untitled-ontology-11/"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="#Artist"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Film"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Genre"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Musik"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Sutradara"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#dinyanyikanOleh"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#disutradaraiOleh"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#memilikiGenre"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#judul"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#rating"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#tahunRilis"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Action"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Adele"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Animation"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#AnthonyRusso"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#AvengersEndgame"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#BTS"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Ballad"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#BlindingLights"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#BongJoonHo"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Butter"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ChrisBuck"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ChristoperNolan"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Coco"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#CountingStars"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#DamienChazelle"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#DoctorStrange"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Drama"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Dynamite"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#EdSheeran"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Fantasy"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Frozen"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Hello"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Interstellar"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#JamesCameron"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Joker"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#JustinBieber"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#KPop"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Lalaland"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#LatinPop"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#LeeUnkrich"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#MattReeves"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Musical"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#OneRepublic"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Parasite"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Perfect"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Pop"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PopRock"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Romance"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SciFi"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ScottDerrickson"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Senorita"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ShapeOfYou"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ShawnMendes"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SomeoneLikeYou"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Stay"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#TheBatman"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#TheWeeknd"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Thriller"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Titanic"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ToddPhilips"/>
+    </Declaration>
+    <ClassAssertion>
+        <Class IRI="#Film"/>
+        <NamedIndividual IRI="#AvengersEndgame"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Musik"/>
+        <NamedIndividual IRI="#BlindingLights"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Musik"/>
+        <NamedIndividual IRI="#Butter"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Film"/>
+        <NamedIndividual IRI="#Coco"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Musik"/>
+        <NamedIndividual IRI="#CountingStars"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Film"/>
+        <NamedIndividual IRI="#DoctorStrange"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Musik"/>
+        <NamedIndividual IRI="#Dynamite"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Film"/>
+        <NamedIndividual IRI="#Frozen"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Musik"/>
+        <NamedIndividual IRI="#Hello"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Film"/>
+        <NamedIndividual IRI="#Interstellar"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Film"/>
+        <NamedIndividual IRI="#Joker"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Film"/>
+        <NamedIndividual IRI="#Lalaland"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Film"/>
+        <NamedIndividual IRI="#Parasite"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Musik"/>
+        <NamedIndividual IRI="#Perfect"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Musik"/>
+        <NamedIndividual IRI="#Senorita"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Musik"/>
+        <NamedIndividual IRI="#ShapeOfYou"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Musik"/>
+        <NamedIndividual IRI="#SomeoneLikeYou"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Musik"/>
+        <NamedIndividual IRI="#Stay"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Film"/>
+        <NamedIndividual IRI="#TheBatman"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Film"/>
+        <NamedIndividual IRI="#Titanic"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#disutradaraiOleh"/>
+        <NamedIndividual IRI="#AvengersEndgame"/>
+        <NamedIndividual IRI="#AnthonyRusso"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#memilikiGenre"/>
+        <NamedIndividual IRI="#AvengersEndgame"/>
+        <NamedIndividual IRI="#Action"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#dinyanyikanOleh"/>
+        <NamedIndividual IRI="#BlindingLights"/>
+        <NamedIndividual IRI="#TheWeeknd"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#memilikiGenre"/>
+        <NamedIndividual IRI="#BlindingLights"/>
+        <NamedIndividual IRI="#Pop"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#dinyanyikanOleh"/>
+        <NamedIndividual IRI="#Butter"/>
+        <NamedIndividual IRI="#BTS"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#memilikiGenre"/>
+        <NamedIndividual IRI="#Butter"/>
+        <NamedIndividual IRI="#KPop"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#disutradaraiOleh"/>
+        <NamedIndividual IRI="#Coco"/>
+        <NamedIndividual IRI="#LeeUnkrich"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#memilikiGenre"/>
+        <NamedIndividual IRI="#Coco"/>
+        <NamedIndividual IRI="#Animation"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#dinyanyikanOleh"/>
+        <NamedIndividual IRI="#CountingStars"/>
+        <NamedIndividual IRI="#OneRepublic"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#memilikiGenre"/>
+        <NamedIndividual IRI="#CountingStars"/>
+        <NamedIndividual IRI="#PopRock"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#disutradaraiOleh"/>
+        <NamedIndividual IRI="#DoctorStrange"/>
+        <NamedIndividual IRI="#ScottDerrickson"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#memilikiGenre"/>
+        <NamedIndividual IRI="#DoctorStrange"/>
+        <NamedIndividual IRI="#Fantasy"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#dinyanyikanOleh"/>
+        <NamedIndividual IRI="#Dynamite"/>
+        <NamedIndividual IRI="#BTS"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#memilikiGenre"/>
+        <NamedIndividual IRI="#Dynamite"/>
+        <NamedIndividual IRI="#KPop"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#disutradaraiOleh"/>
+        <NamedIndividual IRI="#Frozen"/>
+        <NamedIndividual IRI="#ChrisBuck"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#memilikiGenre"/>
+        <NamedIndividual IRI="#Frozen"/>
+        <NamedIndividual IRI="#Animation"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#dinyanyikanOleh"/>
+        <NamedIndividual IRI="#Hello"/>
+        <NamedIndividual IRI="#Adele"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#memilikiGenre"/>
+        <NamedIndividual IRI="#Hello"/>
+        <NamedIndividual IRI="#Pop"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#disutradaraiOleh"/>
+        <NamedIndividual IRI="#Interstellar"/>
+        <NamedIndividual IRI="#ChristoperNolan"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#memilikiGenre"/>
+        <NamedIndividual IRI="#Interstellar"/>
+        <NamedIndividual IRI="#SciFi"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#disutradaraiOleh"/>
+        <NamedIndividual IRI="#Joker"/>
+        <NamedIndividual IRI="#ToddPhilips"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#memilikiGenre"/>
+        <NamedIndividual IRI="#Joker"/>
+        <NamedIndividual IRI="#Drama"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#disutradaraiOleh"/>
+        <NamedIndividual IRI="#Lalaland"/>
+        <NamedIndividual IRI="#DamienChazelle"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#memilikiGenre"/>
+        <NamedIndividual IRI="#Lalaland"/>
+        <NamedIndividual IRI="#Musical"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#disutradaraiOleh"/>
+        <NamedIndividual IRI="#Parasite"/>
+        <NamedIndividual IRI="#BongJoonHo"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#memilikiGenre"/>
+        <NamedIndividual IRI="#Parasite"/>
+        <NamedIndividual IRI="#Thriller"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#dinyanyikanOleh"/>
+        <NamedIndividual IRI="#Perfect"/>
+        <NamedIndividual IRI="#EdSheeran"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#memilikiGenre"/>
+        <NamedIndividual IRI="#Perfect"/>
+        <NamedIndividual IRI="#Pop"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#dinyanyikanOleh"/>
+        <NamedIndividual IRI="#Senorita"/>
+        <NamedIndividual IRI="#ShawnMendes"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#memilikiGenre"/>
+        <NamedIndividual IRI="#Senorita"/>
+        <NamedIndividual IRI="#LatinPop"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#dinyanyikanOleh"/>
+        <NamedIndividual IRI="#ShapeOfYou"/>
+        <NamedIndividual IRI="#EdSheeran"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#memilikiGenre"/>
+        <NamedIndividual IRI="#ShapeOfYou"/>
+        <NamedIndividual IRI="#Pop"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#dinyanyikanOleh"/>
+        <NamedIndividual IRI="#SomeoneLikeYou"/>
+        <NamedIndividual IRI="#Adele"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#memilikiGenre"/>
+        <NamedIndividual IRI="#SomeoneLikeYou"/>
+        <NamedIndividual IRI="#Ballad"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#dinyanyikanOleh"/>
+        <NamedIndividual IRI="#Stay"/>
+        <NamedIndividual IRI="#JustinBieber"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#memilikiGenre"/>
+        <NamedIndividual IRI="#Stay"/>
+        <NamedIndividual IRI="#Pop"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#disutradaraiOleh"/>
+        <NamedIndividual IRI="#TheBatman"/>
+        <NamedIndividual IRI="#MattReeves"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#memilikiGenre"/>
+        <NamedIndividual IRI="#TheBatman"/>
+        <NamedIndividual IRI="#Action"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#disutradaraiOleh"/>
+        <NamedIndividual IRI="#Titanic"/>
+        <NamedIndividual IRI="#JamesCameron"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#memilikiGenre"/>
+        <NamedIndividual IRI="#Titanic"/>
+        <NamedIndividual IRI="#Romance"/>
+    </ObjectPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#rating"/>
+        <NamedIndividual IRI="#AvengersEndgame"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">8.4</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#rating"/>
+        <NamedIndividual IRI="#AvengersEndgame"/>
+        <Literal>AvengersEndgame</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tahunRilis"/>
+        <NamedIndividual IRI="#AvengersEndgame"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">2019</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#judul"/>
+        <NamedIndividual IRI="#BlindingLights"/>
+        <Literal>Blindinglights</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#rating"/>
+        <NamedIndividual IRI="#BlindingLights"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">8.6</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tahunRilis"/>
+        <NamedIndividual IRI="#BlindingLights"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">2019</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#rating"/>
+        <NamedIndividual IRI="#Butter"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">8.2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#rating"/>
+        <NamedIndividual IRI="#Butter"/>
+        <Literal>Butter</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tahunRilis"/>
+        <NamedIndividual IRI="#Butter"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">2021</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#judul"/>
+        <NamedIndividual IRI="#Coco"/>
+        <Literal>Coco</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#rating"/>
+        <NamedIndividual IRI="#Coco"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">8.4</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tahunRilis"/>
+        <NamedIndividual IRI="#Coco"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">2017</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#judul"/>
+        <NamedIndividual IRI="#CountingStars"/>
+        <Literal>CountingStars</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#rating"/>
+        <NamedIndividual IRI="#CountingStars"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">8.4</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tahunRilis"/>
+        <NamedIndividual IRI="#CountingStars"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">2013</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#rating"/>
+        <NamedIndividual IRI="#DoctorStrange"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">7.9</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tahunRilis"/>
+        <NamedIndividual IRI="#DoctorStrange"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">2016</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tahunRilis"/>
+        <NamedIndividual IRI="#DoctorStrange"/>
+        <Literal>DoctorStrange</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#judul"/>
+        <NamedIndividual IRI="#Dynamite"/>
+        <Literal>Dynamite</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#rating"/>
+        <NamedIndividual IRI="#Dynamite"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">8.3</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tahunRilis"/>
+        <NamedIndividual IRI="#Dynamite"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">2020</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#rating"/>
+        <NamedIndividual IRI="#Frozen"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">7.5</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#rating"/>
+        <NamedIndividual IRI="#Frozen"/>
+        <Literal>Frozen</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tahunRilis"/>
+        <NamedIndividual IRI="#Frozen"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">2013</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#judul"/>
+        <NamedIndividual IRI="#Hello"/>
+        <Literal>Hello</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#rating"/>
+        <NamedIndividual IRI="#Hello"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">8.4</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tahunRilis"/>
+        <NamedIndividual IRI="#Hello"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">2015</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#judul"/>
+        <NamedIndividual IRI="#Interstellar"/>
+        <Literal>Interstellar</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#rating"/>
+        <NamedIndividual IRI="#Interstellar"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">8.6</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tahunRilis"/>
+        <NamedIndividual IRI="#Interstellar"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">2014</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#judul"/>
+        <NamedIndividual IRI="#Joker"/>
+        <Literal>Joker</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#rating"/>
+        <NamedIndividual IRI="#Joker"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">8.3</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tahunRilis"/>
+        <NamedIndividual IRI="#Joker"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">2019</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#judul"/>
+        <NamedIndividual IRI="#Lalaland"/>
+        <Literal>Lalaland</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#rating"/>
+        <NamedIndividual IRI="#Lalaland"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">8.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tahunRilis"/>
+        <NamedIndividual IRI="#Lalaland"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">2016</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#judul"/>
+        <NamedIndividual IRI="#Parasite"/>
+        <Literal>Parasite</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#rating"/>
+        <NamedIndividual IRI="#Parasite"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">8.5</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tahunRilis"/>
+        <NamedIndividual IRI="#Parasite"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">2019</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#judul"/>
+        <NamedIndividual IRI="#Perfect"/>
+        <Literal>Perfect</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#rating"/>
+        <NamedIndividual IRI="#Perfect"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">8.5</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tahunRilis"/>
+        <NamedIndividual IRI="#Perfect"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">2017</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#judul"/>
+        <NamedIndividual IRI="#Senorita"/>
+        <Literal>Senorita</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#rating"/>
+        <NamedIndividual IRI="#Senorita"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">8.1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tahunRilis"/>
+        <NamedIndividual IRI="#Senorita"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">2019</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#judul"/>
+        <NamedIndividual IRI="#ShapeOfYou"/>
+        <Literal>ShapeOfYou</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#rating"/>
+        <NamedIndividual IRI="#ShapeOfYou"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">8.7</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tahunRilis"/>
+        <NamedIndividual IRI="#ShapeOfYou"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">2017</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#judul"/>
+        <NamedIndividual IRI="#SomeoneLikeYou"/>
+        <Literal>Someone Like You</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#rating"/>
+        <NamedIndividual IRI="#SomeoneLikeYou"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">8.5</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tahunRilis"/>
+        <NamedIndividual IRI="#SomeoneLikeYou"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">2011</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#judul"/>
+        <NamedIndividual IRI="#Stay"/>
+        <Literal>Stay</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#rating"/>
+        <NamedIndividual IRI="#Stay"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">8.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tahunRilis"/>
+        <NamedIndividual IRI="#Stay"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">2021</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#judul"/>
+        <NamedIndividual IRI="#TheBatman"/>
+        <Literal>TheBatman</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#rating"/>
+        <NamedIndividual IRI="#TheBatman"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">8.1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tahunRilis"/>
+        <NamedIndividual IRI="#TheBatman"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">2022</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#judul"/>
+        <NamedIndividual IRI="#Titanic"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">Titanic</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#rating"/>
+        <NamedIndividual IRI="#Titanic"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">8.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tahunRilis"/>
+        <NamedIndividual IRI="#Titanic"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1997</Literal>
+    </DataPropertyAssertion>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#dinyanyikanOleh"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#disutradaraiOleh"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#memilikiGenre"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#dinyanyikanOleh"/>
+        <Class IRI="#Musik"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#disutradaraiOleh"/>
+        <Class IRI="#Film"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#memilikiGenre"/>
+        <Class IRI="#Film"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#dinyanyikanOleh"/>
+        <Class IRI="#Artist"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#disutradaraiOleh"/>
+        <Class IRI="#Sutradara"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#memilikiGenre"/>
+        <Class IRI="#Genre"/>
+    </ObjectPropertyRange>
+    <DisjointObjectProperties>
+        <ObjectProperty IRI="#dinyanyikanOleh"/>
+        <ObjectProperty IRI="#disutradaraiOleh"/>
+        <ObjectProperty IRI="#memilikiGenre"/>
+    </DisjointObjectProperties>
+    <DisjointObjectProperties>
+        <ObjectProperty IRI="#dinyanyikanOleh"/>
+        <ObjectProperty IRI="#memilikiGenre"/>
+    </DisjointObjectProperties>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#judul"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#rating"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#tahunRilis"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <DataPropertyDomain>
+        <DataProperty IRI="#judul"/>
+        <Class IRI="#Film"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#judul"/>
+        <Class IRI="#Musik"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#rating"/>
+        <Class IRI="#Film"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#rating"/>
+        <Class IRI="#Musik"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#tahunRilis"/>
+        <Class IRI="#Film"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#tahunRilis"/>
+        <Class IRI="#Musik"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#judul"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#rating"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#tahunRilis"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DisjointDataProperties>
+        <DataProperty IRI="#judul"/>
+        <DataProperty IRI="#rating"/>
+        <DataProperty IRI="#tahunRilis"/>
+    </DisjointDataProperties>
+    <DisjointDataProperties>
+        <DataProperty IRI="#judul"/>
+        <DataProperty IRI="#tahunRilis"/>
+    </DisjointDataProperties>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+

@@ -1,0 +1,8 @@
+PREFIX owl: <http://www.semanticweb.org/ontology_filmmusik#>
+
+SELECT ?genre (COUNT(?item) AS ?jumlah)
+WHERE {
+    ?item owl:genre ?genre .
+}
+GROUP BY ?genre
+ORDER BY DESC(?jumlah)

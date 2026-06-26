@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Zakkiya Fitra Rahma Dina — Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --navy:    #0f2044;
+      --navy-m:  #1a3260;
+      --navy-l:  #243d75;
+      --navy-s:  #e8edf8;
+      --pink:    #F9C6D0;
+      --pink-d:  #F0A0B4;
+      --pink-s:  #FDE8ED;
+      --white:   #f7f9fc;
+      --ink:     #0f2044;
+      --ink-m:   #3a5080;
+      --ink-l:   #7a90b8;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'DM Sans', sans-serif;
+      background: var(--white);
+      color: var(--ink);
+      overflow-x: hidden;
+    }
+
+    /* ── NAV ── */
+    nav {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+      background: rgba(15,32,68,0.95);
+      backdrop-filter: blur(10px);
+      border-bottom: 1.5px solid rgba(240,160,180,0.25);
+      padding: 0 2rem;
+      display: flex; align-items: center; justify-content: space-between;
+      height: 60px;
+    }
+    .nav-logo {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.1rem; font-weight: 700;
+      color: var(--pink);
+      letter-spacing: 0.02em;
+    }
+    .nav-links { display: flex; gap: 1.8rem; list-style: none; align-items: center; }
+    .nav-links a {
+      text-decoration: none; font-size: 0.85rem; font-weight: 500;
+      color: #94a8cc; transition: color .2s;
+    }
+    .nav-links a:hover { color: var(--pink); }
+    .nav-back {
+      text-decoration: none;
+      font-size: .8rem; font-weight: 600;
+      color: var(--pink-d);
+      background: rgba(240,160,180,0.12);
+      border: 1px solid rgba(240,160,180,0.3);
+      padding: .35rem 1rem; border-radius: 99px;
+      transition: all .2s;
+    }
+    .nav-back:hover { background: rgba(240,160,180,0.25); color: #fff; }
+
+    /* ── HERO ── */
+    .hero {
+      min-height: 100vh;
+      display: flex; align-items: center;
+      padding: 80px 2rem 2rem;
+      background:
+        radial-gradient(ellipse 55% 60% at 90% 20%, rgba(240,160,180,0.15) 0%, transparent 65%),
+        radial-gradient(ellipse 50% 50% at 10% 80%, rgba(26,50,96,0.6) 0%, transparent 60%),
+        linear-gradient(160deg, #0a1a3a 0%, #0f2044 50%, #1a3260 100%);
+      position: relative; overflow: hidden;
+    }
+
+    .blob {
+      position: absolute; border-radius: 50%; filter: blur(50px); opacity: .2;
+      animation: float 6s ease-in-out infinite;
+    }
+    .blob-1 { width:320px;height:320px; background:#F9C6D0; top:-80px;  right:-80px; animation-delay:0s; }
+    .blob-2 { width:240px;height:240px; background:#243d75; bottom:-60px; left:-60px; animation-delay:2s; }
+    .blob-3 { width:180px;height:180px; background:#F0A0B4; bottom:80px; right:120px; animation-delay:4s; }
+    @keyframes float {
+      0%,100% { transform: translateY(0) scale(1); }
+      50%      { transform: translateY(-18px) scale(1.04); }
+    }
+
+    .hero-inner {
+      position: relative; z-index: 2;
+      max-width: 780px;
+      padding-left: 2rem;
+    }
+    .hero-badge {
+      display: inline-block;
+      background: rgba(240,160,180,0.15);
+      border: 1px solid rgba(240,160,180,0.35);
+      color: var(--pink); font-size: .75rem; font-weight: 600;
+      letter-spacing: .08em; text-transform: uppercase;
+      padding: .35rem 1rem; border-radius: 99px;
+      margin-bottom: 1.4rem;
+    }
+    .hero-name {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(2.2rem, 5.5vw, 3.8rem);
+      font-weight: 700; line-height: 1.15;
+      color: #fff;
+    }
+    .hero-name em {
+      font-style: italic; color: var(--pink-d);
+    }
+    .hero-tagline {
+      margin-top: 1rem; font-size: 1rem; color: #94a8cc;
+      line-height: 1.6; max-width: 500px;
+    }
+    .hero-cta {
+      margin-top: 2rem; display: flex; gap: 1rem; flex-wrap: wrap;
+    }
+    .btn {
+      display: inline-block; text-decoration: none;
+      padding: .7rem 1.8rem; border-radius: 99px;
+      font-size: .9rem; font-weight: 600; transition: transform .15s, box-shadow .15s;
+    }
+    .btn:hover { transform: translateY(-2px); box-shadow: 0 6px 20px rgba(0,0,0,.2); }
+    .btn-primary { background: var(--pink-d); color: #fff; }
+    .btn-outline {
+      background: transparent; color: #94a8cc;
+      border: 2px solid rgba(148,168,204,0.4);
+    }
+    .btn-outline:hover { border-color: var(--pink-d); color: var(--pink-d); }
+
+    /* ── SECTION WRAPPER ── */
+    section { padding: 5rem 1.5rem; }
+    .container { max-width: 860px; margin: 0 auto; }
+    .section-label {
+      font-size: .72rem; font-weight: 600; letter-spacing: .15em;
+      text-transform: uppercase; color: var(--pink-d);
+      margin-bottom: .5rem;
+    }
+    .section-title {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(1.7rem, 4vw, 2.4rem);
+      font-weight: 700; color: var(--ink);
+      margin-bottom: 2.5rem; line-height: 1.2;
+    }
+
+    /* ── IDENTITAS ── */
+    #identitas { background: var(--navy-s); }
+    .id-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+      gap: 1rem;
+    }
+    .id-card {
+      background: #fff;
+      border-radius: 16px;
+      padding: 1.1rem 1.4rem;
+      border-left: 4px solid var(--navy-l);
+      display: flex; flex-direction: column; gap: .2rem;
+      box-shadow: 0 2px 8px rgba(15,32,68,.07);
+      transition: transform .2s;
+    }
+    .id-card:hover { transform: translateY(-3px); }
+    .id-label {
+      font-size: .7rem; font-weight: 600; letter-spacing: .1em;
+      text-transform: uppercase; color: var(--ink-l);
+    }
+    .id-value { font-size: .95rem; font-weight: 500; color: var(--ink); }
+    .id-card:nth-child(even) { border-color: var(--pink-d); }
+    .id-card:nth-child(3n)   { border-color: #4a90d9; }
+
+    /* ── PENDIDIKAN ── */
+    #pendidikan { background: var(--white); }
+    .edu-list { display: flex; flex-direction: column; gap: 1.2rem; }
+    .edu-card {
+      display: flex; align-items: flex-start; gap: 1.4rem;
+      background: #fff;
+      border-radius: 18px;
+      padding: 1.4rem 1.6rem;
+      border: 1.5px solid #c5d3ee;
+      box-shadow: 0 2px 10px rgba(15,32,68,.06);
+      transition: transform .2s, border-color .2s;
+    }
+    .edu-card:hover { transform: translateY(-3px); border-color: var(--navy-l); }
+    .edu-icon {
+      flex-shrink: 0;
+      width: 48px; height: 48px; border-radius: 14px;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 1.4rem;
+    }
+    .edu-icon.sd  { background: #dce8f8; }
+    .edu-icon.smp { background: var(--pink-s); }
+    .edu-icon.sma { background: #d4e0f5; }
+    .edu-school { font-weight: 700; font-size: 1rem; color: var(--ink); }
+    .edu-level  { font-size: .78rem; color: var(--ink-l); font-weight: 500; margin-top: .1rem; }
+    .edu-year {
+      margin-top: .5rem; display: inline-block;
+      background: var(--navy-s);
+      color: var(--navy-m); font-size: .75rem; font-weight: 600;
+      padding: .2rem .75rem; border-radius: 99px;
+    }
+    .edu-card:nth-child(2) .edu-year { background: var(--pink-s); color: #b06070; }
+    .edu-card:nth-child(3) .edu-year { background: #dce8f8; color: var(--navy-m); }
+
+    /* ── SKILL ── */
+    #skill { background: var(--navy-s); }
+    .skill-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 1rem;
+    }
+    .skill-card {
+      background: #fff;
+      border-radius: 18px;
+      padding: 1.5rem 1.4rem;
+      text-align: center;
+      border-top: 4px solid var(--navy-l);
+      box-shadow: 0 2px 8px rgba(15,32,68,.06);
+      transition: transform .2s;
+    }
+    .skill-card:hover { transform: translateY(-4px); }
+    .skill-card:nth-child(2) { border-color: var(--pink-d); }
+    .skill-card:nth-child(3) { border-color: #4a90d9; }
+    .skill-card:nth-child(4) { border-color: var(--navy-l); }
+    .skill-emoji { font-size: 2rem; margin-bottom: .6rem; }
+    .skill-name { font-weight: 600; font-size: .9rem; color: var(--ink); line-height: 1.4; }
+    .skill-desc { font-size: .78rem; color: var(--ink-l); margin-top: .3rem; }
+
+    /* ── ORGANISASI ── */
+    #organisasi { background: var(--white); }
+    .org-list { display: flex; flex-direction: column; gap: 1.4rem; }
+    .org-card {
+      background: #fff;
+      border-radius: 20px;
+      padding: 1.6rem 1.8rem;
+      border: 1.5px solid #c5d3ee;
+      box-shadow: 0 2px 10px rgba(15,32,68,.06);
+      display: flex; gap: 1.4rem; align-items: flex-start;
+      transition: transform .2s, border-color .2s;
+    }
+    .org-card:hover { transform: translateY(-3px); border-color: var(--navy-l); }
+    .org-card:nth-child(2) { border-color: #f9c6d0; }
+    .org-card:nth-child(2):hover { border-color: var(--pink-d); }
+    .org-card:nth-child(3) { border-color: #b8ccee; }
+    .org-icon {
+      flex-shrink: 0;
+      width: 52px; height: 52px; border-radius: 16px;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 1.6rem;
+    }
+    .org-icon.pramuka { background: #dce8f8; }
+    .org-icon.paskib  { background: var(--pink-s); }
+    .org-icon.hmps    { background: #d4e0f5; }
+    .org-title { font-weight: 700; font-size: 1rem; color: var(--ink); }
+    .org-level { font-size: .75rem; color: var(--ink-l); font-weight: 500; margin-top: .15rem; }
+    .org-desc  { font-size: .88rem; color: var(--ink-m); line-height: 1.7; margin-top: .55rem; }
+    .org-tags  { display: flex; flex-wrap: wrap; gap: .4rem; margin-top: .8rem; }
+    .tag {
+      font-size: .7rem; font-weight: 600; padding: .2rem .65rem;
+      border-radius: 99px; background: var(--navy-s); color: var(--navy-m);
+    }
+    .org-card:nth-child(2) .tag { background: var(--pink-s); color: #b06070; }
+    .org-card:nth-child(3) .tag { background: #dce8f8; color: var(--navy-m); }
+
+    /* ── TOMBOL KEMBALI ── */
+    .back-section {
+      background: var(--navy-s);
+      padding: 2.5rem 1.5rem;
+      text-align: center;
+    }
+    .back-btn-big {
+      display: inline-flex; align-items: center; gap: .6rem;
+      text-decoration: none;
+      padding: .85rem 2.2rem; border-radius: 99px;
+      font-size: .95rem; font-weight: 700;
+      background: var(--navy);
+      color: #fff;
+      border: 2px solid transparent;
+      transition: all .2s;
+      box-shadow: 0 4px 20px rgba(15,32,68,.2);
+    }
+    .back-btn-big:hover {
+      background: var(--pink-d);
+      box-shadow: 0 6px 24px rgba(240,160,180,.35);
+      transform: translateY(-2px);
+    }
+
+    /* ── FOOTER ── */
+    footer {
+      background: var(--navy);
+      color: #fff; text-align: center;
+      padding: 3rem 1.5rem;
+    }
+    .footer-name {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.5rem; font-weight: 700;
+      color: var(--pink);
+    }
+    .footer-sub { font-size: .85rem; color: #7a90b8; margin-top: .4rem; }
+    .footer-contacts {
+      display: flex; flex-wrap: wrap; justify-content: center; gap: 1.5rem;
+      margin-top: 1.4rem;
+    }
+    .footer-contacts a {
+      color: #94a8cc; font-size: .85rem; text-decoration: none; font-weight: 500;
+    }
+    .footer-contacts a:hover { color: var(--pink); }
+    .footer-copy { margin-top: 2rem; font-size: .72rem; color: #3a5080; }
+
+    /* ── SCROLL REVEAL ── */
+    .reveal { opacity: 0; transform: translateY(28px); transition: opacity .6s ease, transform .6s ease; }
+    .reveal.visible { opacity: 1; transform: translateY(0); }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width: 600px) {
+      .nav-links { display: none; }
+      .org-card { flex-direction: column; }
+      .edu-card { flex-direction: column; gap: .8rem; }
+      .hero-inner { padding-left: 0; }
+    }
+  </style>
+  <script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@graph":[
+    {
+      "@type":"Person",
+      "name":"Zakkiya Fitra Rahma Dina"
+    },
+    {
+      "@type":"CollegeOrUniversity",
+      "name":"Universitas Halu Oleo"
+    },
+    {
+      "@type":"DefinedTerm",
+      "name":"Microsoft Office"
+    },
+    {
+      "@type":"Project",
+      "name":"Personal Portfolio Website"
+    }
+  ]
+}
+</script>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <span class="nav-logo">Zakkiya ✿</span>
+  <ul class="nav-links">
+    <li><a href="#identitas">Identitas</a></li>
+    <li><a href="#pendidikan">Pendidikan</a></li>
+    <li><a href="#skill">Skill</a></li>
+    <li><a href="#organisasi">Organisasi</a></li>
+    <li><a href="index.php" class="nav-back">← Kembali</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="blob blob-1"></div>
+  <div class="blob blob-2"></div>
+  <div class="blob blob-3"></div>
+  <div class="hero-inner">
+    <div class="hero-badge">✦ Personal Portfolio ✦</div>
+    <h1 class="hero-name">Zakkiya Fitra<br><em>Rahma Dina</em></h1>
+    <p class="hero-tagline">
+      Mahasiswi Ilmu Komputer Semester 6 di Universitas Halu Oleo 
+    </p>
+    <div class="hero-cta">
+      <a href="#identitas" class="btn btn-primary">Kenali Saya</a>
+      <a href="mailto:zakkiyafitrar@gmail.com" class="btn btn-outline">Hubungi Saya</a>
+    </div>
+  </div>
+</section>
+
+<!-- IDENTITAS -->
+<section id="identitas">
+  <div class="container">
+    <p class="section-label">Tentang Saya</p>
+    <h2 class="section-title">Identitas Diri</h2>
+    <div class="id-grid">
+      <div class="id-card reveal"><span class="id-label">Nama Lengkap</span><span class="id-value">Zakkiya Fitra Rahma Dina</span></div>
+      <div class="id-card reveal"><span class="id-label">Tempat, Tanggal Lahir</span><span class="id-value">08 November 2004</span></div>
+      <div class="id-card reveal"><span class="id-label">Jenis Kelamin</span><span class="id-value">Perempuan</span></div>
+      <div class="id-card reveal"><span class="id-label">Alamat</span><span class="id-value">Jln. Balaikota I</span></div>
+      <div class="id-card reveal"><span class="id-label">Nomor Telepon</span><span class="id-value">082195609454</span></div>
+      <div class="id-card reveal"><span class="id-label">Email</span><span class="id-value">zakkiyafitrar@gmail.com</span></div>
+      <div class="id-card reveal"><span class="id-label">Status Pernikahan</span><span class="id-value">Belum Menikah</span></div>
+      <div class="id-card reveal"><span class="id-label">Kewarganegaraan</span><span class="id-value">Indonesia 🇮🇩</span></div>
+      <div class="id-card reveal"><span class="id-label">Pendidikan Saat Ini</span><span class="id-value">S1 Ilmu Komputer, Universitas Halu Oleo — Semester 6</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- PENDIDIKAN -->
+<section id="pendidikan">
+  <div class="container">
+    <p class="section-label">Riwayat Akademik</p>
+    <h2 class="section-title">Riwayat Pendidikan</h2>
+    <div class="edu-list">
+      <div class="edu-card reveal">
+        <div class="edu-icon sma">🏫</div>
+        <div class="edu-body">
+          <div class="edu-school">SMAN 4 Kendari</div>
+          <div class="edu-level">Sekolah Menengah Atas</div>
+          <span class="edu-year">2020 — 2023</span>
+        </div>
+      </div>
+      <div class="edu-card reveal">
+        <div class="edu-icon smp">📚</div>
+        <div class="edu-body">
+          <div class="edu-school">SMPN 9 Kendari</div>
+          <div class="edu-level">Sekolah Menengah Pertama</div>
+          <span class="edu-year">2017 — 2020</span>
+        </div>
+      </div>
+      <div class="edu-card reveal">
+        <div class="edu-icon sd">✏️</div>
+        <div class="edu-body">
+          <div class="edu-school">SDN 10 Mandonga</div>
+          <div class="edu-level">Sekolah Dasar</div>
+          <span class="edu-year">2012 — 2017</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SKILL -->
+<section id="skill">
+  <div class="container">
+    <p class="section-label">Kemampuan</p>
+    <h2 class="section-title">Daftar Skill</h2>
+    <div class="skill-grid">
+      <div class="skill-card reveal">
+        <div class="skill-emoji">💻</div>
+        <div class="skill-name">Microsoft Office</div>
+        <div class="skill-desc">Mahir menggunakan Word, Excel, dan PowerPoint untuk keperluan akademis maupun administrasi.</div>
+      </div>
+      <div class="skill-card reveal">
+        <div class="skill-emoji">⏰</div>
+        <div class="skill-name">Manajemen Waktu</div>
+        <div class="skill-desc">Mampu mengatur prioritas dan menyelesaikan tugas secara efisien sesuai tenggat waktu.</div>
+      </div>
+      <div class="skill-card reveal">
+        <div class="skill-emoji">🤝</div>
+        <div class="skill-name">Kerja Tim & Kolaborasi</div>
+        <div class="skill-desc">Mampu bekerja sama dalam tim, menghargai perbedaan pendapat, dan berkontribusi aktif untuk mencapai tujuan bersama.</div>
+      </div>
+      <div class="skill-card reveal">
+        <div class="skill-emoji">🌸</div>
+        <div class="skill-name">Jujur, Disiplin & Tanggung Jawab</div>
+        <div class="skill-desc">Menjunjung tinggi integritas dalam setiap pekerjaan dan berkomitmen terhadap tanggung jawab yang diberikan.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ORGANISASI -->
+<section id="organisasi">
+  <div class="container">
+    <p class="section-label">Pengalaman</p>
+    <h2 class="section-title">Keterlibatan Organisasi</h2>
+    <div class="org-list">
+      <div class="org-card reveal">
+        <div class="org-icon pramuka">⚜️</div>
+        <div>
+          <div class="org-title">Pramuka (Praja Muda Karana)</div>
+          <div class="org-level">Tingkat Sekolah</div>
+          <p class="org-desc">Aktif sebagai anggota Pramuka yang melatih jiwa kepemimpinan serta kemandirian. Melalui berbagai kegiatan kepramukaan, saya membangun karakter yang kuat, belajar bertahan dalam kondisi sulit, serta mengembangkan rasa tanggung jawab terhadap diri sendiri dan lingkungan sekitar.</p>
+          <div class="org-tags">
+            <span class="tag">Kepemimpinan</span>
+            <span class="tag">Kemandirian</span>
+            <span class="tag">Karakter</span>
+          </div>
+        </div>
+      </div>
+      <div class="org-card reveal">
+        <div class="org-icon paskib">🚩</div>
+        <div>
+          <div class="org-title">Paskibraka — Pasukan Pengibar Bendera</div>
+          <div class="org-level">Tingkat SMP</div>
+          <p class="org-desc">Aktif dalam kegiatan Paskibraka yang melatih kedisiplinan, ketepatan waktu, kerja sama tim, dan rasa nasionalisme. Pengalaman ini membantu saya meningkatkan kemampuan mengikuti instruksi dengan tepat dan bekerja secara terorganisir dalam lingkungan yang penuh tanggung jawab.</p>
+          <div class="org-tags">
+            <span class="tag">Disiplin</span>
+            <span class="tag">Kerja Tim</span>
+            <span class="tag">Nasionalisme</span>
+          </div>
+        </div>
+      </div>
+      <div class="org-card reveal">
+        <div class="org-icon hmps">💻</div>
+        <div>
+          <div class="org-title">HMPS Ilmu Komputer — Universitas Halu Oleo</div>
+          <div class="org-level">Tingkat Perguruan Tinggi (Aktif)</div>
+          <p class="org-desc">Sebagai anggota aktif Himpunan Mahasiswa Program Studi Ilmu Komputer, saya berperan dalam menjaga kekompakan dan solidaritas antar angkatan. Organisasi ini menjadi wadah diskusi akademis dan non-akademis di kalangan mahasiswa sepeminatan, mendukung tercapainya visi dan misi program studi Ilmu Komputer secara bersama-sama.</p>
+          <div class="org-tags">
+            <span class="tag">Solidaritas</span>
+            <span class="tag">Diskusi Ilmiah</span>
+            <span class="tag">Kolaborasi</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TOMBOL KEMBALI -->
+<div class="back-section">
+  <a href="index.php" class="back-btn-big">
+    ← Kembali ke Halaman Utama
+  </a>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-name">Zakkiya Fitra Rahma Dina</div>
+  <div class="footer-sub">Mahasiswi Ilmu Komputer · Universitas Halu Oleo</div>
+  <div class="footer-contacts">
+    <a href="mailto:zakkiyafitrar@gmail.com">✉️ zakkiyafitrar@gmail.com</a>
+    <a href="tel:082195609454">📞 082195609454</a>
+  </div>
+  <p class="footer-copy">© 2025 Zakkiya Fitra Rahma Dina. Dibuat dengan 💗</p>
+</footer>
+
+<script>
+  const reveals = document.querySelectorAll('.reveal');
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((e, i) => {
+      if (e.isIntersecting) {
+        setTimeout(() => e.target.classList.add('visible'), i * 80);
+        observer.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.12 });
+  reveals.forEach(el => observer.observe(el));
+</script>
+</body>
+</html>

@@ -1,0 +1,8 @@
+PREFIX owl: <http://www.semanticweb.org/ontology_filmmusik#>
+
+SELECT ?judul ?rating
+WHERE {
+    ?item owl:judul ?judul .
+    ?item owl:rating ?rating .
+}
+ORDER BY DESC(?rating)
