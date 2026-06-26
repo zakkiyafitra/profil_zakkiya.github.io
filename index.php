@@ -223,7 +223,7 @@
             <a href="index.php">Beranda</a>
             <a href="?tampil=1">Daftar Data</a>
             <a href="#search">Pencarian</a>
-            <a href="profil.html">Profil</a>
+            <a href="index.html">Profil</a>
         </div>
 
     </div>
